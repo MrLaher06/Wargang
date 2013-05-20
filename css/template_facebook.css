@@ -1,0 +1,447 @@
+@charset "UTF-8";
+/*GENERAL*/
+html, body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	height:590px;
+}
+.button {
+	color:#9f0c01;
+	background-color:#111;
+	border:1px solid #444;
+	padding:2px;
+}
+.button:hover {
+	border:1px solid #333;
+}
+.inputbox {
+	border:1px solid #2b2b2b;
+	padding:2px;
+}
+.cursor {
+	cursor:pointer;
+}
+.vignette {
+	margin:5px;
+	padding:5px;
+	border:1px solid #fff;
+	background-color:#999;
+	width:60px;
+	height:60px;
+}
+.vignette30 {
+	padding:2px;
+	margin:4px 0 0 0;
+	border:1px solid #fff;
+	background-color:#999;
+	width:20px;
+	height:20px;
+}
+a {
+	color:#900;
+	text-decoration:none;
+}
+a:focus {
+	outline:0;
+}
+input:focus {
+	outline:0;
+}
+img {
+	border:0;
+}
+h1, h2, h3, h4, h5, p {
+	margin:0;
+}
+.vert {
+	color:#090;
+}
+.rouge {
+	color:#C00;
+}
+.orange {
+	color:#F90;
+}
+.bleu {
+	color:#69F;
+}
+.vert_gang {
+	color:#0F6;
+}
+.jaune {
+	color:#FF3;
+}
+.violet {
+	color:#F9F;
+}
+.bold {
+	font-weight:bold;
+}
+.spacer {
+	clear:both;
+	margin:0;
+	padding:0;
+	height:0;
+}
+.close_windows {
+	padding:10px;
+	text-align:right;
+}
+/*MESSAGE*/
+#msg {
+	position:absolute;
+	top:11px;
+	right:20px;
+	z-index:10000;
+	color:#FC0;
+}
+/*CENTER*/
+#carte {
+	padding-top:5px;
+}
+/*MENU TOP*/
+#menuTop {
+	margin:5px;
+}
+.deconnec {
+	color:#F60;
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
+/*MENU USER*/
+#detailUserPrincipal {
+	display:block;
+}
+#detailUserPrincipal .name {
+	color:#FC0;
+	font-weight:bold;
+	font-size:12px;
+}
+#detailUserPrincipal .vignetteInfo {
+	padding:5px;
+	margin:2px;
+	background-color:#333;
+	border:1px solid #FFF;
+	width:30px;
+	min-height:30px;
+	display:block;
+	text-align:center;
+}
+#detailUserPrincipal .deplacement {
+	color:#FFF;
+	margin-bottom:3px;
+}
+#detailUserSecondaire div {
+	margin:2px 7px 2px 7px;
+}
+.alerte_attaque {
+	position:absolute;
+	top:45px;
+	left:5px;
+}
+/*BARRE GRAPHIQUE*/
+.Cparent {
+	width:100%;
+	display:block;
+	border:1px solid #333333;
+	height:8px;
+	margin:0 0 4px 0;
+	padding:0;
+	background-color:#C00;
+	background-image:url(../images/barre_graphique/barreRouge.png);
+}
+.Cenfant {
+	background-color:#060;
+	background-image:url(../images/barre_graphique/barreVert.png);
+	height:8px;
+	float:left;
+}
+.Cparent_simple {
+	width:100%;
+	display:block;
+	border:1px solid #333333;
+	height:4px;
+	margin:0 0 4px 0;
+	padding:0;
+	background-color:#C00;
+	background-image:url(../images/barre_graphique/barreRouge.png);
+}
+.Cenfant_simple {
+	background-color:#060;
+	background-image:url(../images/barre_graphique/barreVert.png);
+	height:4px;
+	float:left;
+}
+.ContenuChiffre {
+	width:120px;
+	font-size:10px;
+	z-index:2;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+/*CARTE*/
+.caseCarte {
+	display:block;
+	width:60px;
+	height:60px;
+	border-bottom:1px solid #999;
+	border-left:1px solid #999;
+	position:relative;
+}
+.elem_map {
+	position:absolute;
+	top:0;
+	left:0;
+}
+.mini_vignette_map {
+	z-index:150;
+}
+.elem_map_vignette {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:101;
+}
+.case_venir {
+	position:absolute;
+	top:0;
+	left:0;
+	width:60px;
+	text-align:center;
+	padding-top:24px;
+	padding-bottom:24px;
+	z-index:101;
+	font-size:10px;
+	color:#222;
+}
+.case_venir:hover {
+	color:#F00;
+}
+.closeOverlay {
+	position:absolute;
+	text-align:right;
+	width:100%;
+	margin-top:-14px;
+	margin-left:12px;
+	z-index:300;
+	cursor:pointer;
+}
+.closeOverlay img {
+	cursor:pointer;
+}
+.deplacementCarte {
+	background-image:url(../images/carte/bg_lien.png);
+	cursor:pointer;
+}
+.tableCarte {
+	background-color:#555;
+	border-left:1px solid #999;
+	border-top:1px solid #999;
+	border-right:1px solid #999;
+}
+.tableCarte td {
+	min-width:10px;
+	min-height:10px;
+}
+.tableCarte .td_letter {
+	background-color:#999;
+	font-weight:bold;
+}
+#chrono {
+	position:absolute;
+	margin-top:18px;
+	margin-left:18px;
+	text-align:center;
+	font-weight:bold;
+	color:#900;
+	z-index:300;
+}
+.no_passage {
+	background-color:#333;
+}
+/*DROGUES*/
+.titreProduitDrogue {
+	color:#FC0;
+}
+.conteneurTitreProduitDrogue {
+	color:#900;
+	font-weight:bold;
+	font-size:16px;
+	margin-bottom:5px;
+}
+.conteneurProduit {
+	position:relative;
+	margin:5px 5px 10px 5px;
+	background-image:url(../images/bg_trans.png);
+	padding:5px;
+	border:1px solid #999;
+	min-height:70px;
+}
+.conteneurProduit:hover {
+	border:1px solid #fff;
+}
+.conteneurProduit .vignette {
+	margin:0 10px 10px 0;
+}
+/*ACTION*/
+.conteneur_action h2 {
+	color:#9f0c01;
+	text-transform:uppercase;
+	font-size:14px;
+	margin-top:5px;
+	margin-bottom:10px;
+	margin-left:5px;
+}
+.time_action {
+	position:absolute;
+	top:0;
+	right:0;
+	padding:10px;
+}
+.button_action {
+	position:absolute;
+	right:5px;
+	top:5px;
+}
+.conteneurVignette {
+	position:relative;
+	margin: 0 5px 5px 0;
+	padding:5px;
+	border:1px solid #fff;
+	background-color:#999;
+	width:60px;
+	height:60px;
+	float:left;
+}
+.conteneurVignette .infoVignette {
+	position:absolute;
+	bottom:0;
+	right:6px;
+	width:40px;
+}
+/*COMPETENSE*/
+.competense_list {
+	border:1px solid #999;
+	padding:5px;
+	margin:2px 5px 5px 5px;
+	background-color:#666;
+}
+.titre_competense {
+	color:#F90;
+}
+/*SCORE*/
+.tableau_score {
+	background-color:#333;
+}
+.tableau_score td {
+	height:30px;
+	padding: 0 5px 0 5px;
+}
+.tableau_pair td {
+	background-color:#111;
+}
+.tableau_impair td {
+	background-color:#222;
+}
+.name_score {
+	color:#FC0;
+}
+.argent_score {
+	color:#C60;
+}
+/*JOURNAL*/
+.article {
+	margin:0 10px 0 10px;
+	text-align:justify;
+}
+.titre_article {
+	margin:5px 0 5px 0;
+	color:#900;
+	font-weight:bold;
+	font-size:14px;
+}
+.date_article {
+	margin-bottom:10px;
+}
+.separator {
+	background-image:url(../images/home/separator.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	height:2px;
+	margin:10px 0 10px 0;
+}
+.msg_alert {
+	top:70px;
+	left:0;
+	bottom:180px;
+	width:100%;
+	text-align:center;
+	position:fixed;
+	z-index:99999;
+}
+/*TCHAT*/
+#tchatTxtr {
+	height:120px;
+	overflow:auto;
+	border:1px solid #2b2b2b;
+	background-image:url(../images/tchat/bg.jpg);
+	background-repeat:no-repeat;
+	background-position:100% 100%;
+	background-color:#666666;
+	color:#FFF;
+	padding-left:5px;
+	font-size:11px;
+	margin-bottom:5px;
+}
+.name_tchat {
+	cursor:pointer;
+}
+.tchatTxtr_input:focus {
+	outline:0;
+	background-color:#FCC;
+}
+.icon_tchat {
+	width:12px;
+	margin-left:2px;
+	margin-right:2px;
+}
+.li_aide_tchat li {
+	margin:5px 0 5px 0;
+}
+.iconPolice {
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+#calculator {
+	margin: 0pt auto;
+	width: 130px;
+	border: 3px double #CCC;
+	background-color:#333;
+	padding: 3px;
+}
+#calculator .result {
+	padding-right: 5px;
+	border: 1px solid #222;
+	text-align: right;
+	font-size: 18px;
+	font-weight: bold;
+}
+#calculator .digits ul {
+	list-style-type: none;
+	float: left;
+	font-family: Courier;
+	font-weight: bold;
+	font-size: 12px;
+	color:#000;
+	margin: 0pt;
+	padding: 0pt;
+}
+#calculator .digits ul li {
+	padding: 3px 8px 3px 8px;
+	margin: 3px;
+	border: 1px solid #000;
+	background-color: #eee;
+	cursor: pointer;
+}

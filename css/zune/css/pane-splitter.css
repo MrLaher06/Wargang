@@ -1,0 +1,61 @@
+html{width:100%;height:100%;overflow:hidden;margin:0;padding:0;}
+body{width:100%;height:100%;background-color:#222;margin:0;padding:0;}
+.DHTMLSuite_paneContent{overflow:auto;position:relative;width:100%;height:100%;margin:0;padding:0;}
+.DHTMLSuite_pane{overflow:hidden;background-color:#000;color:#FFF;border-left:1px solid #555;border-right:1px solid #555;}
+.DHTMLSuite_paneHeader{overflow:hidden;color:#FFF;height:23px;line-height:22px;background-image:url(../../../images/pane-splitter/pane-splitter-header-bg.png);background-repeat:repeat-x;}
+.DHTMLSuite_paneContent .DHTMLSuite_paneContentInner{padding:4px;}
+.DHTMLSuite_paneTabs{background-color:#666;height:24px;line-height:24px;border-top:1px solid #555;padding-left:3px;padding-right:4px;position:relative;}
+.DHTMLSuite_paneTabs div{position:relative;margin-left:1px;font-size:0.9em;line-height:120%;padding-left:10px;top:-1px;overflow:hidden;font-weight:700;padding-right:5px;}
+.DHTMLSuite_paneTabs table{table-layout:fixed;width:100%;}
+.DHTMLSuite_paneTabs td{text-align:center;text-overflow:ellipsis;white-space:nowrap;}
+.DHTMLSuite_paneTabs div a{display:block;clear:both;text-decoration:none;position:relative;text-overflow:ellipsis;overflow:hidden;}
+.DHTMLSuite_paneTabs .paneSplitterActiveTab{height:22px;padding-top:0;background-image:url(../../../images/pane-splitter/pane-splitter-tab-active-bg.png);background-repeat:no-repeat;}
+.DHTMLSuite_paneTabs .paneSplitterActiveTab a{padding-right:10px;padding-top:4px;padding-bottom:4px;height:22px;color:#222;}
+.DHTMLSuite_paneTabs .paneSplitterInactiveTab{border-top:1px solid #555;background-image:url(../../../images/pane-splitter/pane-splitter-tab-inact-bg.png);background-repeat:no-repeat;height:21px;}
+.DHTMLSuite_paneTabs .paneSplitterInactiveTab a{color:#444;line-height:17px;display:block;padding-right:10px;padding-top:1px;padding-bottom:3px;height:21px;}
+.DHTMLSuite_paneTabs span{position:absolute;right:0;top:0;height:22px;width:14px;display:block;background-repeat:no-repeat;background-position:top right;}
+.DHTMLSuite_paneTabs .paneSplitterInactiveTab span{background-image:url(../../../images/pane-splitter/pane-splitter-tab-inact-bg2.png);}
+.DHTMLSuite_paneTabs .paneSplitterActiveTab span{background-image:url(../../../images/pane-splitter/pane-splitter-tab-active-b2.png);}
+.DHTMLSuite_paneTabs .paneSplitterInactiveTab span.closable{background-image:url(../../../images/pane-splitter/pane-splitter-tab-inact-bg2-closable.png);}
+.DHTMLSuite_paneTabs .paneSplitterInactiveTab span.closableOver{background-image:url(../../../images/pane-splitter/pane-splitter-tab-inact-bg2-closable-over.png);}
+.DHTMLSuite_paneTabs .paneSplitterActiveTab span.closable{background-image:url(../../../images/pane-splitter/pane-splitter-tab-active-b2-closable.png);}
+.DHTMLSuite_paneTabs .paneSplitterActiveTab span.closableOver{background-image:url(../../../images/pane-splitter/pane-splitter-tab-active-b2-closable-over.png);}
+.DHTMLSuite_paneHeader .DHTMLSuite_paneHeader_buttonDiv{padding:3px;}
+.DHTMLSuite_paneHeader .paneTitle{padding-left:4px;}
+.DHTMLSuite_paneHeader .DHTMLSuite_paneHeader_buttonDiv div,/* General rules for the small buttons inside a pane header */ .DHTMLSuite_pane_collapsed_west .buttonDiv div,/* Also small buttons inside the box for collapsed panes */ .DHTMLSuite_pane_collapsed_south .buttonDiv div,.DHTMLSuite_pane_collapsed_east .buttonDiv div,.DHTMLSuite_pane_collapsed_north .buttonDiv div{background-repeat:no-repeat;width:15px;height:15px;background-position:center center;cursor:pointer;}
+.DHTMLSuite_pane_collapsed_west .buttonDiv div,/* Also small buttons inside the box for collapsed panes */ .DHTMLSuite_pane_collapsed_south .buttonDiv div,.DHTMLSuite_pane_collapsed_east .buttonDiv div,.DHTMLSuite_pane_collapsed_north .buttonDiv div{margin:1px;}
+.DHTMLSuite_paneHeader .DHTMLSuite_paneHeader_buttonDiv div{float:right;}
+.DHTMLSuite_paneHeader .DHTMLSuite_paneHeader_buttonDiv .closeButton,.DHTMLSuite_paneHeader .DHTMLSuite_paneHeader_buttonDiv .closeButtonOver{background-image:url(../../../images/pane-splitter/pane-splitter-close.gif);padding:1px;}
+.refreshButton,.refreshButtonOver{background-image:url(../../../images/pane-splitter/pane-splitter-refresh.gif);padding:1px;}
+.collapseButtonHorizontal,.collapseButtonHorizontalOver{background-image:url(../../../images/pane-splitter/pane-splitter-collapse.gif);padding:1px;}
+.expandButtonHorizontal,.expandButtonHorizontalOver{background-image:url(../../../images/pane-splitter/pane-splitter-expand.gif);padding:1px;}
+.collapseButtonVertical,.collapseButtonVerticalOver{background-image:url(../../../images/pane-splitter/pane-splitter-collapse-v.gif);padding:1px;}
+.expandButtonVertical,.expandButtonVerticalOver{background-image:url(../../../images/pane-splitter/pane-splitter-expand-v.gif);padding:1px;}
+.DHTMLSuite_paneHeader .DHTMLSuite_paneHeader_buttonDiv .closeButtonOver,.collapseButtonHorizontalOver,.expandButtonHorizontalOver,.collapseButtonVerticalOver,.refreshButtonOver,.expandButtonVerticalOver{background-color:#444;border:1px solid #666;padding:0;}
+.DHTMLSuite_paneSplitter_horizontal{background-image:url('../../../images/pane-splitter/pane-splitter-resize-hor.png');background-repeat:no-repeat;background-position:top center;border-top:1px solid #555;cursor:n-resize;}
+.DHTMLSuite_paneSplitter_horizontal_expInTitle{background-image:url('../../../images/pane-splitter/pane-splitter-resize-hor2.png');}
+.DHTMLSuite_paneSplitter_horizontal_noresize{background-image:url('../../../images/pane-splitter/pane-splitter-resize-hor-nd.png');background-repeat:no-repeat;background-position:top center;border-top:1px solid #555;cursor:default;z-index:1;}
+.DHTMLSuite_paneSplitter_vertical{background-image:url('../../../images/pane-splitter/pane-splitter-resize-ver.png');background-repeat:no-repeat;background-position:left center;cursor:w-resize;}
+.DHTMLSuite_paneSplitter_vertical_expInTitle{background-image:url('../../../images/pane-splitter/pane-splitter-resize-ver2.png');}
+.DHTMLSuite_paneSplitter_vertical_noresize{background-image:url('../../../images/pane-splitter/pane-splitter-resize-ver-nd.png');background-repeat:no-repeat;background-position:left center;cursor:default;z-index:1;}
+.DHTMLSuite_resizeButtonLeft,.DHTMLSuite_resizeButtonRight{background-position:center center;position:absolute;left:0;top:50%;height:50px;margin-top:-25px;width:100%;background-repeat:no-repeat;cursor:pointer;opacity:0.5px;filter:alpha(opacity=50);}
+.DHTMLSuite_collapseExpandOver{opacity:1px;filter:null;}
+.DHTMLSuite_paneSplitter_vertical .DHTMLSuite_resizeButtonLeft{background-image:url('../../../images/pane-splitter/pane-splitter-coll-v-new.png');}
+.DHTMLSuite_paneSplitter_vertical .DHTMLSuite_resizeButtonRight{background-image:url('../../../images/pane-splitter/pane-splitter-coll-v-e-new.png');}
+.DHTMLSuite_resizeButtonUp,.DHTMLSuite_resizeButtonDown{background-position:center center;position:absolute;top:0;left:50%;width:50px;margin-left:-25px;height:100%;background-repeat:no-repeat;cursor:pointer;opacity:0.5px;filter:alpha(opacity=30);}
+.DHTMLSuite_paneSplitter_horizontal .DHTMLSuite_resizeButtonUp{background-image:url('../../../images/pane-splitter/pane-splitter-coll-h-new.png');}
+.DHTMLSuite_paneSplitter_horizontal .DHTMLSuite_resizeButtonDown{background-image:url('../../../images/pane-splitter/pane-splitter-coll-h-s-new.png');}
+.DHTMLSuite_paneSplitter_onResize{background-color:#333;}
+.DHTMLSuite_pane_collapsed_west,.DHTMLSuite_pane_collapsed_east{background-color:#666;z-index:15000;width:14px;padding-bottom:1px;}
+.DHTMLSuite_pane_collapsed_west{padding-left:4px;left:0;}
+.DHTMLSuite_pane_collapsed_east{padding-right:3px;}
+.DHTMLSuite_pane_collapsed_south,.DHTMLSuite_pane_collapsed_north{background-color:#666;z-index:16000;padding-left:3px;padding-right:3px;height:14px;}
+.DHTMLSuite_pane_collapsed_south{padding-bottom:2px;}
+.DHTMLSuite_pane_collapsed_north{padding-top:2px;border-bottom:1px solid #555;}
+.DHTMLSuite_pane_collapsed_west .DHTMLSuite_pane_collapsedInner,.DHTMLSuite_pane_collapsed_east .DHTMLSuite_pane_collapsedInner,.DHTMLSuite_pane_collapsed_south .DHTMLSuite_pane_collapsedInner,.DHTMLSuite_pane_collapsed_north .DHTMLSuite_pane_collapsedInner,.DHTMLSuite_pane_collapsed_west .DHTMLSuite_pane_collapsedInnerOver,.DHTMLSuite_pane_collapsed_east .DHTMLSuite_pane_collapsedInnerOver,.DHTMLSuite_pane_collapsed_south .DHTMLSuite_pane_collapsedInnerOver,.DHTMLSuite_pane_collapsed_north .DHTMLSuite_pane_collapsedInnerOver{border:1px solid #555;}
+.DHTMLSuite_pane_collapsed_west .DHTMLSuite_pane_collapsedInner,.DHTMLSuite_pane_collapsed_east .DHTMLSuite_pane_collapsedInner,.DHTMLSuite_pane_collapsed_west .DHTMLSuite_pane_collapsedInnerOver,.DHTMLSuite_pane_collapsed_east .DHTMLSuite_pane_collapsedInnerOver{width:12px;float:none;}
+.DHTMLSuite_pane_collapsed_north .DHTMLSuite_pane_collapsedInner,.DHTMLSuite_pane_collapsed_south .DHTMLSuite_pane_collapsedInner,.DHTMLSuite_pane_collapsed_north .DHTMLSuite_pane_collapsedInnerOver,.DHTMLSuite_pane_collapsed_south .DHTMLSuite_pane_collapsedInnerOver{height:12px;margin-right:6px;}
+.DHTMLSuite_pane_collapsedInnerOver{background-color:#555;cursor:pointer;}
+#DHTMLSuite_pane_north{background-color:#666;border-left:0;}
+#DHTMLSuite_pane_south{border-left:0;}
+#DHTMLSuite_pane_south .DHTMLSuite_paneContent{font-size:0.9em;}

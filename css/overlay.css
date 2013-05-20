@@ -1,0 +1,29 @@
+html,body{font-family:Arial, Helvetica, sans-serif;font-size:11px;background-color:#000;color:#FFF;margin:0;padding:0;}
+img{border:0;}
+a{color:#F60;font-size:12px;text-decoration:none;}
+a:hover{color:#C00;}
+.vert{color:#060;}
+.rouge{color:#900;}
+.bold{font-weight:700;}
+.spacer{clear:both;height:0;margin:0;padding:0;}
+.tableau_score{background-image:url(../images/home/bg_trans.png);color:#FFF;width:100%;}
+.tableau_score td{height:30px;padding:0 5px;}
+.tableau_impair td{background-image:url(../images/home/bg_red_trans.png);}
+.name_score{color:#FC0;}
+.argent_score{color:#C60;}
+.vignette{border:1px solid #fff;background-color:#999;width:60px;height:60px;margin:5px;padding:5px;}
+.vignette30{border:1px solid #fff;background-color:#999;width:20px;height:20px;margin:4px 0 0;padding:2px;}
+.conteneur_action h1{color:#F60;text-transform:uppercase;margin-top:5px;margin-bottom:5px;margin-left:5px;font-size:15px;}
+.conteneur_action p{margin:5px;}
+.conteneur_action h2{color:#F60;margin:5px;}
+.retour{margin-top:20px;text-align:center;}
+.menu_home{text-align:center;margin:20px 0 0;padding:0;}
+.menu_home li{display:inline;margin:5px;padding:5px;}
+.menu_home a{font-size:16px;}
+.article{text-align:justify;margin:0 10px;}
+.titre_article{color:#900;font-weight:700;font-size:14px;margin:5px 0;}
+.date_article{margin-bottom:10px;}
+.separator{background-image:url(../images/home/separator.png);background-position:center;background-repeat:no-repeat;height:2px;margin:10px 0;}
+.journal{background-image:url(../images/home/journal.jpg);background-repeat:no-repeat;background-position:100% 0;}
+h1,h2,h3,h4,h5,p,.conteneur_action{margin:0;}
+a:focus,input:focus{outline:0;}

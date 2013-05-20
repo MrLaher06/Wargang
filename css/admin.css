@@ -1,0 +1,267 @@
+html, body {
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	background: url(../images/admin/menu/topnav_bg.gif) repeat-x;
+	font-size: 8pt;
+}
+body {
+	padding-top:40px;
+}
+h1 {
+	padding:5px 0 5px 0;
+	margin:5px 0 5px 0;
+}
+hr {
+	margin:20px 10px 10px 10px;
+}
+img {
+	border:0;
+}
+a {
+	color:#690;
+	text-decoration:none;
+}
+a:hover {
+	color:#88CE30;
+}
+a:focus {
+	outline:0;
+}
+.inputbox {
+		border:1px solid #999;
+		padding:2px;
+}
+input:focus {
+	outline:0;
+}
+ul.topnav {
+	font-size:12px;
+	min-width:800px;
+	list-style: none;
+	padding: 0 20px;
+	margin: 0;
+	float: left;
+	z-index:99998;
+	position:absolute;
+	top:0;
+	left:0;
+}
+ul.topnav li {
+	float: left;
+	margin: 0;
+	padding: 0 15px 0 0;
+	position: relative;
+}
+ul.topnav li a {
+	padding: 10px 5px;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	float: left;
+}
+ul.topnav li a:hover {
+	background: url(../images/admin/menu/topnav_hover.gif) no-repeat center top;
+}
+ul.topnav li span {
+	width: 17px;
+	height: 35px;
+	float: left;
+	background: url(../images/admin/menu/subnav_btn.gif) no-repeat center top;
+}
+ul.topnav li span.subhover {
+	background-position: center bottom;
+	cursor: pointer;
+}
+ul.topnav li ul.subnav {
+	list-style: none;
+	position: absolute;
+	left: 0;
+	top: 35px;
+	background: #333;
+	margin: 0;
+	padding: 0;
+	display: none;
+	float: left;
+	width: 170px;
+	border: 1px solid #111;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+ul.topnav li ul.subnav li {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #252525;
+	border-bottom: 1px solid #444;
+	clear: both;
+	width: 170px;
+}
+html ul.topnav li ul.subnav li a {
+	float: left;
+	width: 145px;
+	background: #333 url(../images/admin/menu/dropdown_linkbg.gif) no-repeat 10px center;
+	padding-left: 20px;
+}
+html ul.topnav li ul.subnav li a:hover {
+	background: #222 url(../images/admin/menu/dropdown_linkbg.gif) no-repeat 10px center;
+}
+.spacer {
+	clear:both;
+}
+.conteneur_general {
+	padding:0 30px 0 30px;
+	color:#222;
+	position:relative;
+	min-width:945px;
+}
+.conteneur {
+	border:1px solid #CCC;
+	padding:10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	min-height:300px;
+	position:relative;
+	min-width:900px;
+}
+.button_valid {
+	position:absolute;
+	top:0;
+	right:30px;
+}
+table.tablesorter a {
+	color:#000;
+	text-decoration:none;
+}
+.spacer_left {
+	padding-left:10px;
+}
+.vignette {
+	height:96px;
+	margin: 0 10px 10px 0;
+	background-color:#CCC;
+	border:1px solid #555;
+	padding:2px;
+}
+.bloc_couleur {
+	width:10px;
+	height:100px;
+	float:left;
+	margin-right:10px;
+}
+.menu_right {
+	top:0;
+	right:0;
+	position:absolute;
+	z-index:99999;
+	padding:10px;
+	color:#fff;
+}
+.revenir {
+	text-align:right;
+	padding:20px 0 10px 0;
+	font-weight:bold;
+}
+
+#boutonDebug {
+	margin-top:10px;
+	text-align:center;
+	background-color:#E1E1E1;
+	border:1px solid #555;
+	padding:3px;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	cursor:pointer;
+}
+
+#boutonDebug:hover {
+	background-color:#222;
+}
+
+.menu_button {
+	background-image:url(../images/admin/menu/bg.png);
+	width:150px;
+	float:left;
+	text-align:center;
+	vertical-align:middle;
+	padding:30px 0 30px 0;
+	min-height:95px;
+}
+
+.button_valide_icon {
+	border:1px solid #CCC;
+	border-right:2px solid #CCC;
+	border-bottom:2px solid #CCC;
+	margin-left:10px;
+	cursor:pointer;
+	float:right;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	float:right;
+}
+
+.button_valide_icon:hover {
+	border:1px solid #80CA29;
+	border-right:2px solid #80CA29;
+	border-bottom:2px solid #80CA29;
+	background-color:#D5E6CE;
+}
+
+.titre_menu {
+	padding:10px 0 10px 10px;
+	font-weight:bold;
+	float:left;
+}
+.vert {
+	color:#690;
+}
+.rouge {
+	color:#C00;
+}
+
+.menu_button:hover {
+	background-image:url(../images/admin/menu/bg_hover.png);
+}
+
+.edit_user label input, .edit_user label select, .edit_user label textarea {
+	float:right;
+	min-width:100px;
+}
+.edit_user {
+	clear:both;
+	padding:5px;
+	margin:2px;
+}
+.content_edit_user {
+	width:47%;
+	min-width:380px;
+}
+.content_edit_user h3 {
+	padding:2px;
+	margin:2px;
+}
+.content_edit_user h2 {
+	padding:2px;
+	margin:2px;
+}
+.bloc_user {
+	border:1px solid #666;
+	padding:5px 5px 20px 5px;
+	margin:0px 0 20px 0;
+	background-color:#E1E1E1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+h2 .lien{
+	font-size:10px;
+	float:right;
+}
+
+.statistique div {
+	margin:5px;
+}

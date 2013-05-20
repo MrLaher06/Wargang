@@ -1,0 +1,40 @@
+AddDefaultCharset UTF-8
+AddLanguage fr_FR .html .htm .css .js
+
+FileETag None
+
+ExpiresActive On
+ExpiresDefault "access plus 1 month"
+
+<FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav)$">
+	ExpiresDefault "access plus 1 month"
+	Header append Cache-Control "public"
+</FilesMatch>
+
+<FilesMatch "\.(gif|jpg|jpeg|png|swf)$">
+	ExpiresDefault "access plus 1 month"
+	Header append Cache-Control "public"
+</FilesMatch>
+
+<FilesMatch "\.(xml|txt|html|js|css)$">
+	ExpiresDefault "access plus 1 month"
+	Header append Cache-Control "private"
+</FilesMatch>
+
+<FilesMatch "\.(php|cgi|pl|htm)$">
+	ExpiresActive Off
+	Header set Cache-Control "private, no-cache, no-store, proxy-revalidate, no-transform"
+	Header set Pragma "no-cache"
+</FilesMatch>
+
+RewriteEngine On
+
+RewriteBase /
+
+RewriteRule ^(application|modules|system) - [F,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule .* index.php/$0 [PT,L]
+
